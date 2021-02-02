@@ -13,8 +13,8 @@ def parser():
 
 
 def feature_matching():
-    img1 = cv2.imread(cropped_image, 0)  # Original Image
-    img2 = cv2.imread(original_image, 0)  # Random cropped Image
+    img1 = cv2.imread(cropped_image, 0)  # Random cropped Image
+    img2 = cv2.imread(original_image, 0)  # Original Image
 
     orb = cv2.ORB_create(nfeatures=100000, WTA_K=2, edgeThreshold=0, patchSize=25)
 
